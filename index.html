@@ -6,13 +6,14 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/estilos.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
 </head>
 <body>
 	<header>
 		<h1>Sistema de PW10</h1>
 		<nav>
 			<ul>
-				<li><button type="button" class="btn btn-primary">Altas</button></li>
+				<li><button type="button" class="btn btn-primary" id="btnAltas">Altas</button></li>
 				<li><button type="button" class="btn btn-success">Bajas</button></li>
 				<li><button type="button" class="btn btn-info">Cambios</button></li>
 				<li><button type="button" class="btn btn-warning">Consultas</button></li>
@@ -20,5 +21,20 @@
 			</ul>
 		</nav>
 	</header>
+	<section id="secAltaAlumnos">
+		<h2>Altas de Alumnos</h2>
+		<form action="#">
+		<input type="text" id="txtNumControl" class="form-control" placeholder="Número de control" autofocus required>
+		<input type="text" id="txtNombres" 		class="form-control" placeholder="Nombre(s)" required>
+		<input type="text" id="txtApellidoPat" 	class="form-control" placeholder="Apellido paterno" required>
+		<input type="text" id="txtApellidoMat" 	class="form-control" placeholder="Apellido materno" required>
+		<input type="text" id="txtClaveCarrera" class="form-control" placeholder="Clave carrera" required>
+		<input type="text" id="txtSemestre" 	class="form-control" placeholder="Semestre" required>
+		<input type="text" id="txtPromedio" 	class="form-control" placeholder="Promedio" required>
+		<input type="text" id="txtEstatus" 		class="form-control" placeholder="Estatus" required>
+		<input type="submit" value="Guardar" id="btnEnviar" class="btn btn-success btn-lg btn-block">
+		</form>
+	</section>
 </body>
+<script src="js/eventos.js"></script>
 </html>
