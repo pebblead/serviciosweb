@@ -5,4 +5,4 @@ var iniciaApp = function(){
 	$("#btnAltas").on("click",muestraAltas);
 }
 
-$(document).on("click",iniciaApp);
+$(document).on("ready",iniciaApp);
