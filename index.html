@@ -14,16 +14,16 @@
 		<nav>
 			<ul>
 				<li><button type="button" class="btn btn-primary" id="btnAltas">Altas</button></li>
-				<li><button type="button" class="btn btn-success">Bajas</button></li>
-				<li><button type="button" class="btn btn-info">Cambios</button></li>
-				<li><button type="button" class="btn btn-warning">Consultas</button></li>
-				<li><button type="button" class="btn btn-danger">Salir</button></li>
+				<li><button type="button" class="btn btn-success" id="btnBajas">Bajas</button></li>
+				<li><button type="button" class="btn btn-info" id="btnCambios">Cambios</button></li>
+				<li><button type="button" class="btn btn-warning" id="btnConsultas">Consultas</button></li>
+				<li><button type="button" class="btn btn-danger" id="btnSalir">Salir</button></li>
 			</ul>
 		</nav>
 	</header>
 	<section id="secAltaAlumnos">
 		<h2>Altas de Alumnos</h2>
-		<form action="#">
+		<form action="javascript:GuardaAltaAlumnos();" id="frmAltaAlumnos">
 		<input type="text" id="txtNumControl" class="form-control" placeholder="Número de control" autofocus required>
 		<input type="text" id="txtNombres" 		class="form-control" placeholder="Nombre(s)" required>
 		<input type="text" id="txtApellidoPat" 	class="form-control" placeholder="Apellido paterno" required>
@@ -32,7 +32,13 @@
 		<input type="text" id="txtSemestre" 	class="form-control" placeholder="Semestre" required>
 		<input type="text" id="txtPromedio" 	class="form-control" placeholder="Promedio" required>
 		<input type="text" id="txtEstatus" 		class="form-control" placeholder="Estatus" required>
-		<input type="submit" value="Guardar" id="btnEnviar" class="btn btn-success btn-lg btn-block">
+		<input type="submit" value="Guardar" class="btn btn-success btn-lg btn-block">
+		</form>
+	</section>
+	<section id="secBajaAlumnos">
+		<form action="#">
+			<input type="text" id="txtNumControlBajas" class="form-control" placeholder="Número de control" autofocus required>
+			<input type="submit" id="btnEnviarBaja" value="Eliminar" class="btn btn-danger btn-lg btn-block">
 		</form>
 	</section>
 </body>
